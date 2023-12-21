@@ -6,7 +6,7 @@ import Footer from './Footer'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(10)
 
   return (
     <>
