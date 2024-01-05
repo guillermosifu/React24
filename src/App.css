@@ -3,6 +3,18 @@ body {
   padding: 0;
 }
 
+.header{
+  border: solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.header li{
+  margin-left: 10px;
+}
+
 .name-pokemon {
   text-align: center;
 }
