@@ -9,6 +9,6 @@ import PrimerComponente from './MiComponente.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <FormRegister />
+    <App />
   </React.StrictMode>,
 )
