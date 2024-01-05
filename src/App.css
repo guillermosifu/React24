@@ -1,8 +1,28 @@
-.name-pokemon{
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.name-pokemon {
   text-align: center;
 }
-.img-pokemon{
-  width: 200px;
-  height: 250px;
- 
+.img-pokemon {
+  max-width: 200px;
+  min-height: 350px;
+  object-fit: contain !important;
+}
+
+.card-pokemon {
+  max-width: 350px;
+  min-height: 400px;
+  max-height: 400px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.card-center {
+  text-align: center;
 }

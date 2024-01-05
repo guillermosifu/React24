@@ -28,9 +28,9 @@ const Pokemon = () => {
         {pokemons.length > 0 &&
         pokemons.map((pokemon, index) => (
           <Grid item md={4} sm={12}>
-            <Card>
+            <Card className="card-pokemon">
               <CardMedia className="img-pokemon" component="img" image={`${imgUrl}${index + 1}.svg`} />
-              <CardContent>
+              <CardContent className="card-center">
                 <h3 className="name-pokemon">{pokemon.name}</h3>
               </CardContent>
             </Card>
