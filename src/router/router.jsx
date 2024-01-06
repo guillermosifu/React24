@@ -4,6 +4,7 @@ import Git from "../Git";
 import FormRegister from "../FormRegister";
 import Header from "../components/Header";
 import Flags from "../pages/Flags";
+import Detail from "../pages/Detail";
 
 
 const Router=()=>{
@@ -16,6 +17,7 @@ const Router=()=>{
             <Route path="/Pokemon" element={<Pokemon/>}/>
             <Route path="/Git" element={<Git/>}/>
             <Route path="/banderas" element={<Flags/>}/>
+            <Route path="/banderas/detail/:name" element={<Detail/>}/>
         </Routes>
         </BrowserRouter>
     )

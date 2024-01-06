@@ -11,6 +11,7 @@ import {
   MenuItem,
   InputLabel,
 } from "@mui/material";
+import{Link} from'react-router-dom';
 import { getDataPokemon } from "../../helpers";
 
 const Flags = () => {
@@ -80,6 +81,7 @@ const Flags = () => {
         {countries.length > 0 &&
           countries.map((country) => (
             <Grid item md={3} sm={12}>
+                <Link to={`/banderas/detail/${country.name.common}`}>
               <Card>
                 <CardMedia
                   component="img"
@@ -91,6 +93,7 @@ const Flags = () => {
                   <p>Capital :{country.capital}</p>
                 </CardContent>
               </Card>
+              </Link>
             </Grid>
           ))}
       </Grid>
