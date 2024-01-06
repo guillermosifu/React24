@@ -37,14 +37,12 @@ const Flags = () => {
     setCountries(response);
   };
 
-  const handleSearchCountry = (e) => {
+  const handleSearchCountry =(e)=> {
     const countryName = e.target.value;
-
-    if (countryName === 0) {
+    if (countryName.length === 0) {
       FetchCountries();
     }
-
-    if (countryName.lenght > 3) {
+    if (countryName.length > 3) {
       const filterCountries = countries.filter((country) =>
         country.name.official.toUpperCase().includes(countryName.toUpperCase())
       );
@@ -69,7 +67,7 @@ const Flags = () => {
         <Grid item md={6} sm={12}>
           <FormControl fullWidth>
             <InputLabel>Filtra tu Region</InputLabel>
-            <Select label="Filtra tu Region" onChange={handleRegion}>
+            <Select label="Filtra tu Region" value={region} onChange={handleRegion}>
               <MenuItem value="all">Todas Las Regiones</MenuItem>
               <MenuItem value="Africa">Africa</MenuItem>
               <MenuItem value="America">America</MenuItem>
@@ -89,8 +87,8 @@ const Flags = () => {
                   image={country.flags.svg}
                 />
                 <CardContent>
-                    <h4>{country.name.common}</h4>
-                    <p>Capital :{country.capital}</p>
+                  <h4>{country.name.common}</h4>
+                  <p>Capital :{country.capital}</p>
                 </CardContent>
               </Card>
             </Grid>
