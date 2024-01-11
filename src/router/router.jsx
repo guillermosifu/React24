@@ -1,11 +1,11 @@
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Pokemon from "../pages/pokemon";
 import Git from "../Git";
-import FormRegister from "../FormRegister";
+// import FormRegister from "../FormRegister";
 import Header from "../components/Header";
 import Flags from "../pages/Flags";
-import Detail from "../pages/Detail";
-
+import Detail from "../pages/Detail"
+import Login from "../pages/Login/Login";
 
 const Router=()=>{
 
@@ -13,11 +13,12 @@ const Router=()=>{
         <BrowserRouter>
         <Header/>
         <Routes>
-            <Route path="/" element={<FormRegister/>}/>
+            {/* <Route path="/" element={<FormRegister/>}/> */}
             <Route path="/Pokemon" element={<Pokemon/>}/>
             <Route path="/Git" element={<Git/>}/>
             <Route path="/banderas" element={<Flags/>}/>
             <Route path="/banderas/detail/:name" element={<Detail/>}/>
+            <Route path="/" element={<Login/>}/>
         </Routes>
         </BrowserRouter>
     )

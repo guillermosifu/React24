@@ -13,7 +13,8 @@ const Detail = () => {
     const response = await getDataPokemon(
       `https://restcountries.com/v3.1/name/${name}`
     );
-   
+    console.log(response)
+    setCountry(response[0])
   };
 
   useEffect(() => {
