@@ -13,12 +13,12 @@ const Router=()=>{
         <BrowserRouter>
         <Header/>
         <Routes>
-            {/* <Route path="/" element={<FormRegister/>}/> */}
+             <Route path="/" element={<Login/>}/>
             <Route path="/Pokemon" element={<Pokemon/>}/>
             <Route path="/Git" element={<Git/>}/>
             <Route path="/banderas" element={<Flags/>}/>
             <Route path="/banderas/detail/:name" element={<Detail/>}/>
-            <Route path="/" element={<Login/>}/>
+          
         </Routes>
         </BrowserRouter>
     )
